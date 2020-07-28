@@ -1,0 +1,17 @@
+<div>
+  <!-- <li ng-show="!$ctrl.items.length">No events</li> -->
+  <button
+    style="margin: 5px;"
+    ng-repeat="item in $ctrl.items"
+    class="btn btn-success"
+    ui-sref="itemsCategories({categoryShortName:item.short_name,Name:item.name})"
+  >
+    {{ item.name }}
+  </button>
+
+  <!-- <ul>
+    <li ng-repeat="item in $ctrl.items">
+      {{ item.name }}
+    </li>
+  </ul> -->
+</div>

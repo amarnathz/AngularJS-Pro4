@@ -1,0 +1,19 @@
+<h2>Menu Category:{{itemCon.categoriesName}}</h2>
+<div style="margin: 25px;">
+  <a ui-sref="home">Home</a> &lt;
+  <span><a ui-sref="categories">Categories</a></span
+  >&lt;
+  <span
+    ><a ui-sref="itemsCategories"
+      >{{itemCon.categoriesName || "items"}}</a
+    ></span
+  >
+</div>
+
+<h1 style="text-align: center;">
+  <p ng-show="!itemCon.categoriesName">Click Categories</p>
+</h1>
+
+<items-component items-data="itemCon.data"> </items-component>
+
+<!-- <li ng-show="!itemCon.data.length">No events</li> -->

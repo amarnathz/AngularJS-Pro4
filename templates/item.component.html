@@ -1,0 +1,20 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Short name</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in $ctrl.itemsData">
+        <th scope="row">{{ item.short_name }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price_large | currency: "&#8377;" }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
